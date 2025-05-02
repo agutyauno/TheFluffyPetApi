@@ -6,10 +6,9 @@ namespace TheFluffyPetApi.models
         public string Name { get; set; } = string.Empty;
         public string Brand {get; set;} = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public string ImageUrl { get; set; } = string.Empty;
-        public decimal Price { get; set; }
+        public List<string> ImageUrl { get; set; } = [];
         public float Discount { get; set; }
         public string Category {get; set;} = string.Empty;
-        public int stockQuantity { get; set; }
+        public List<Variant> Variants {get; set;} = [];
     }
 }

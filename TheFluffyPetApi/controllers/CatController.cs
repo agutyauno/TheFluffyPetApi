@@ -14,6 +14,83 @@ namespace TheFluffyPetApi.controllers
     {
         static readonly List<Cat> cats =[];
 
+        public CatsController()
+        {
+            AddCat(new Cat
+            {
+                CatId = "c001",
+                Name = "Mimi",
+                Breed = "anh lông ngắn",
+                Gender = true,
+                Age = 2,
+                Color = "xám khói",
+                BirthDate = new DateOnly(2023, 5, 1),
+                Weight = 4.5f,
+                HealthStatus = "Healthy",
+                IsDeworming = true,
+                VaccinateDates = new List<DateOnly> { new DateOnly(2023, 6, 1), new DateOnly(2023, 7, 1) },
+                Price = 5000000,
+                Description = "A fluffy stupid cat.",
+                ImageUrl = "https://thepet.vn/wp-content/uploads/2024/12/meo-anh-long-ngan-9.jpg",
+                Discount = 0
+            });
+            AddCat(new Cat
+            {
+                CatId = "c002",
+                Name = "Mao mao",
+                Breed = "xiêm",
+                Gender = true,
+                Age = 1,
+                Color = "trắng",
+                BirthDate = new DateOnly(2024, 6, 1),
+                Weight = 3f,
+                HealthStatus = "Healthy",
+                IsDeworming = true,
+                VaccinateDates = [new (2024, 7, 1), new (2024, 9, 1)],
+                Price = 700000,
+                Description = "A fluffy stupid cat.",
+                ImageUrl = "https://furmily.vn/wp-content/uploads/2023/11/Thiet-ke-chua-co-ten-5-1.jpg",
+                Discount = 0
+            });
+            AddCat(new Cat
+            {
+                CatId = "c003",
+                Name = "harry",
+                Breed = "Persian",
+                Gender = true,
+                Age = 2,
+                Color = "golden",
+                BirthDate = new DateOnly(2023, 5, 1),
+                Weight = 4.5f,
+                HealthStatus = "Healthy",
+                IsDeworming = true,
+                VaccinateDates = [new(2023, 6, 1), new(2023, 7, 1)],
+                Price = 12000000,
+                Description = "A fluffy Persian cat.",
+                ImageUrl = "http://images6.fanpop.com/image/photos/37000000/Persian-Kitten-cats-37009791-1280-1024.jpg",
+                Discount = 0
+            });
+            _ = AddCat(new Cat
+            {
+                CatId = "c004",
+                Name = "chuột",
+                Breed = "Persian",
+                Gender = true,
+                Age = 2,
+                Color = "golden",
+                BirthDate = new DateOnly(2023, 5, 1),
+                Weight = 4f,
+                HealthStatus = "Healthy",
+                IsDeworming = true,
+                VaccinateDates = [new DateOnly(2023, 6, 1), new DateOnly(2023, 7, 1)],
+                Price = 900000,
+                Description = "A fluffy Persian cat.",
+                ImageUrl = "http://images6.fanpop.com/image/photos/37000000/Persian-Kitten-cats-37009791-1280-1024.jpg",
+                Discount = 0
+            });
+            
+        }
+
         [HttpGet]
         public IActionResult GetAllCats([FromQuery] int? limit)
         {

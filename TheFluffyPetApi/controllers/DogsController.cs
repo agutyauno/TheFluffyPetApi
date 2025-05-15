@@ -35,7 +35,12 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 15000000,
                 Description = "Friendly and well-trained Golden Retriever",
-                ImageUrl = "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                },
                 Discount = 0
             });
 
@@ -59,7 +64,12 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 12000000,
                 Description = "Energetic and playful Siberian Husky",
-                ImageUrl = "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_1280.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2016/11/22/23/13/black-and-white-1851106_1280.jpg"
+                },
                 Discount = 5.0f
             });
 
@@ -82,7 +92,12 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 20000000,
                 Description = "Adorable and smart Pembroke Welsh Corgi",
-                ImageUrl = "https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/24/dog-4671220_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/06/29/22/22/corgi-3506188_1280.jpg"
+                },
                 Discount = 10.0f
             });
         }
@@ -133,7 +148,7 @@ namespace TheFluffyPetApi.controllers
             existingDog.Breed = updatedDog.Breed;
             existingDog.Price = updatedDog.Price;
             existingDog.Description = updatedDog.Description;
-            existingDog.ImageUrl = updatedDog.ImageUrl;
+            existingDog.ImageUrls = updatedDog.ImageUrls;
             return NoContent();
         }
     }

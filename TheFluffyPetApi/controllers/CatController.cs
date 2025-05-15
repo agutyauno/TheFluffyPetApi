@@ -31,7 +31,12 @@ namespace TheFluffyPetApi.controllers
                 VaccinateDates = new List<DateOnly> { new DateOnly(2023, 6, 1), new DateOnly(2023, 7, 1) },
                 Price = 5000000,
                 Description = "A fluffy stupid cat.",
-                ImageUrl = "https://thepet.vn/wp-content/uploads/2024/12/meo-anh-long-ngan-9.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://thepet.vn/wp-content/uploads/2024/12/meo-anh-long-ngan-9.jpg",
+                    "https://azpet.com.vn/wp-content/uploads/2021/07/meo-anh-long-ngan-2.jpg",
+                    "https://meocunpet.com/wp-content/uploads/2020/07/meo-anh-long-ngan-mau-xam-xanh.jpg"
+                },
                 Discount = 0
             });
             AddCat(new Cat
@@ -49,7 +54,12 @@ namespace TheFluffyPetApi.controllers
                 VaccinateDates = [new (2024, 7, 1), new (2024, 9, 1)],
                 Price = 700000,
                 Description = "A fluffy stupid cat.",
-                ImageUrl = "https://furmily.vn/wp-content/uploads/2023/11/Thiet-ke-chua-co-ten-5-1.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://furmily.vn/wp-content/uploads/2023/11/Thiet-ke-chua-co-ten-5-1.jpg",
+                    "https://www.petmart.vn/wp-content/uploads/2019/04/meo-xiem.jpg",
+                    "https://zoipet.com/wp-content/uploads/2020/04/meo-xiem.jpg"
+                },
                 Discount = 0
             });
             AddCat(new Cat
@@ -67,10 +77,15 @@ namespace TheFluffyPetApi.controllers
                 VaccinateDates = [new(2023, 6, 1), new(2023, 7, 1)],
                 Price = 12000000,
                 Description = "A fluffy Persian cat.",
-                ImageUrl = "http://images6.fanpop.com/image/photos/37000000/Persian-Kitten-cats-37009791-1280-1024.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://cdn.pixabay.com/photo/2017/08/23/08/33/cats-2671249_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2020/04/07/16/01/cat-5013356_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2015/11/15/22/09/cat-1044750_1280.jpg"
+                },
                 Discount = 0
             });
-            _ = AddCat(new Cat
+            AddCat(new Cat
             {
                 CatId = "c004",
                 Name = "chuột",
@@ -85,10 +100,14 @@ namespace TheFluffyPetApi.controllers
                 VaccinateDates = [new DateOnly(2023, 6, 1), new DateOnly(2023, 7, 1)],
                 Price = 900000,
                 Description = "A fluffy Persian cat.",
-                ImageUrl = "http://images6.fanpop.com/image/photos/37000000/Persian-Kitten-cats-37009791-1280-1024.jpg",
+                ImageUrls = new List<string>
+                {
+                    "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg"
+                },
                 Discount = 0
             });
-            
         }
 
         [HttpGet]
@@ -137,7 +156,7 @@ namespace TheFluffyPetApi.controllers
             existingCat.Breed = updatedCat.Breed;
             existingCat.Price = updatedCat.Price;
             existingCat.Description = updatedCat.Description;
-            existingCat.ImageUrl = updatedCat.ImageUrl;
+            existingCat.ImageUrls = updatedCat.ImageUrls;
             
             return NoContent();
         }

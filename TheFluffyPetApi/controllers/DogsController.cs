@@ -35,12 +35,12 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 15000000,
                 Description = "Friendly and well-trained Golden Retriever",
-                ImageUrls = new List<string>
-                {
+                ImageUrls =
+                [
                     "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
                     "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
                     "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
-                },
+                ],
                 Discount = 0
             });
 
@@ -64,12 +64,12 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 12000000,
                 Description = "Energetic and playful Siberian Husky",
-                ImageUrls = new List<string>
-                {
+                ImageUrls =
+                [
                     "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_1280.jpg",
                     "https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_1280.jpg",
                     "https://cdn.pixabay.com/photo/2016/11/22/23/13/black-and-white-1851106_1280.jpg"
-                },
+                ],
                 Discount = 5.0f
             });
 
@@ -92,13 +92,769 @@ namespace TheFluffyPetApi.controllers
                 ],
                 Price = 20000000,
                 Description = "Adorable and smart Pembroke Welsh Corgi",
-                ImageUrls = new List<string>
-                {
+                ImageUrls =
+                [
                     "https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
                     "https://cdn.pixabay.com/photo/2019/12/03/22/24/dog-4671220_1280.jpg",
                     "https://cdn.pixabay.com/photo/2018/06/29/22/22/corgi-3506188_1280.jpg"
-                },
+                ],
                 Discount = 10.0f
+            });
+            AddDog(new Dog
+            {
+                DogId = "d004",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d005",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d006",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d007",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d008",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d009",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d010",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d011",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d012",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d013",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d014",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d015",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d016",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d017",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d018",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d019",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d020",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d021",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d022",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d023",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d024",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d025",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d026",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d027",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d028",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d029",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
+            });
+            AddDog(new Dog
+            {
+                DogId = "d030",
+                Name = "Lucky",
+                Breed = "Golden Retriever",
+                Gender = true,
+                Age = 2,
+                Color = "Golden",
+                BirthDate = new DateOnly(2022, 5, 15),
+                Weight = 32.5f,
+                HealthStatus = "Excellent",
+                IsDeworming = true,
+                VaccinateDates =
+                [
+                    new DateOnly(2022, 6, 15),
+                    new DateOnly(2022, 9, 15),
+                    new DateOnly(2023, 3, 15)
+                ],
+                Price = 15000000,
+                Description = "Friendly and well-trained Golden Retriever",
+                ImageUrls =
+                [
+                    "https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2019/12/03/22/22/dog-4671216_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_1280.jpg"
+                ],
+                Discount = 0
             });
         }
 

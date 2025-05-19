@@ -15,7 +15,7 @@ namespace TheFluffyPetApi.Models
         public List<DateOnly> VaccinateDates { get; set; } = [];
         public decimal Price { get; set; }
         public string Description { get; set; } = string.Empty;
-        public List<string> ImageUrls { get; set; } = new List<string>();
+        public List<string> ImageUrls { get; set; } = [];
         public float Discount { get; set; }
     }
 }
